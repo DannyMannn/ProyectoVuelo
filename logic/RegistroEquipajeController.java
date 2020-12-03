@@ -3,6 +3,7 @@ package logic;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 import gui.RegistroEquipajeView;
 import gui.MaletaView;
@@ -48,6 +49,14 @@ public class RegistroEquipajeController {
                         RegistroEquipajeController.this
                                 .pasajero.documentarMaleta(maleta);
                     }
+		    double totalExceso = 0;
+		    for (Maleta maleta: RegistroEquipajeController.this
+				    .pasajero.getEquipaje ()) {
+			    if (maleta != null) {
+				    totalExceso += maleta.obtenerTotal ();
+			    }
+		    }
+		    JOptionPane.showMessageDialog (null, "Total exceso equipaje: $" + totalExceso);
 
                     try {
                         BoletoDao boletoDao = new BoletoDao();
