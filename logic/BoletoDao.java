@@ -78,7 +78,7 @@ public class BoletoDao {
 	    }
     }
 
-    public Boleto eliminar(String nombrePasajeroBoleto, EnumVuelo tipoVueloBoleto) throws Exception {
+    public void eliminar(String nombrePasajeroBoleto, EnumVuelo tipoVueloBoleto) throws Exception {
         String tipoVueloBoletoAux = tipoVueloBoleto.toString ()
                 .toLowerCase ();
         nombrePasajeroBoleto = nombrePasajeroBoleto.replace (" ", "");
