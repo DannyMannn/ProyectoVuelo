@@ -7,11 +7,8 @@ import java.awt.event.WindowListener;
 import java.awt.event.WindowEvent;
 import java.nio.file.Path;
 
+import logic.*;
 import model.Boleto;
-import logic.BoletoDao;
-import logic.RegistroInternacionalController;
-import logic.RegistroNacionalController;
-import logic.CancelarController;
 
 public class MenuView extends JFrame implements WindowListener {
 
@@ -138,7 +135,8 @@ public class MenuView extends JFrame implements WindowListener {
     }
 
     private void imprimirBoletoMenuItemActionPerformed(java.awt.event.ActionEvent evt) {
-        JOptionPane.showMessageDialog(null, "Not available yet.");
+        ImprimirView imprimirView = new ImprimirView();
+        ImprimirController imprimirController = new ImprimirController(imprimirView);
     }
 
     private void cancelarBoletoMenuItemActionPerformed(java.awt.event.ActionEvent evt) {
