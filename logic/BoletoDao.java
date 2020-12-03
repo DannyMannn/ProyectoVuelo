@@ -91,6 +91,5 @@ public class BoletoDao {
         } catch (Exception e) {
             throw new Exception ("¡Error! No se ha podido eliminar el archivo.");
         }
-        return null;
     }
 }
