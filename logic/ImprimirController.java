@@ -1,7 +1,13 @@
+package logic;
+
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
+
+
+import gui.ImprimirView;
+import model.EnumVuelo;
 
 public class ImprimirController implements ActionListener {
     BoletoDao boleto = new BoletoDao();
@@ -13,20 +19,21 @@ public class ImprimirController implements ActionListener {
     }
 
     public void eventos() {
-        this.vista.imprimirBoton.addActionListener(this);
+
+        vista.getImprimirBoton().addActionListener(this);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         Object evt = e.getSource();
-        if (evt.equals(this.vista.imprimirBoton)) {
+        if (evt.equals(vista.getImprimirBoton())) {
             try {
-                this.boleto.cargar(this.vista.nombrePas.getText(), EnumVuelo.valueOf(this.vista.tipoPasajeroComboBox.getSelectedItem().toString()));
+                boleto.eliminar(vista.getNombrePas().getText(), EnumVuelo.valueOf(vista.getTipoPasajeroComboBox().getSelectedItem().toString()));
                 JOptionPane.showMessageDialog((Component)null, ImprimirController.this.boleto.toString());
-                this.vista.dispose();
-            } catch (Exception var4) {
-                JOptionPane.showMessageDialog((Component)null, "Ha ocurrido un error");
+                vista.dispose();
+            } catch (Exception a) {
+                JOptionPane.showMessageDialog(null, "Ha ocurrido un error!!!");
             }
         }
-
     }
 }
