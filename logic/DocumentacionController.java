@@ -8,6 +8,14 @@ import model.Documentacion;
 import model.DocumentacionInternacional;
 import model.DocumentacionNacional;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class DocumentacionController {
     private DocumentacionNacionalView nacionalVista;
     private DocumentacionInternacionalView internacionalVista;

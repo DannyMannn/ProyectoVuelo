@@ -7,6 +7,14 @@ import java.awt.event.ActionListener;
 import gui.CancelarView;
 import model.EnumVuelo;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 //Clase controladora de la accion cancelar boleto
 public class CancelarController implements ActionListener {
     BoletoDao b1 = new BoletoDao();

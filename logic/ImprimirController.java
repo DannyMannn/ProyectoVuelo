@@ -10,6 +10,14 @@ import gui.ImprimirView;
 import model.Boleto;
 import model.EnumVuelo;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class ImprimirController implements ActionListener {
     BoletoDao boleto = new BoletoDao();
     private ImprimirView vista;

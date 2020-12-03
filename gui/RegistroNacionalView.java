@@ -5,6 +5,14 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 import java.net.URL;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class RegistroNacionalView {
     private JFrame mainFrame;
     DocumentacionNacionalView docNacionalView = new DocumentacionNacionalView();

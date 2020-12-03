@@ -10,6 +10,14 @@ import model.Maleta;
 import model.Boleto;
 import model.Pasajero;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class RegistroEquipajeController {
     private RegistroEquipajeView registroEquipajeView;
     private MaletaController maletaController;

@@ -4,6 +4,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.net.URL;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class ImprimirView extends JFrame{
     JPanel contenedor;
     JButton imprimirBoton = new JButton("Imprimir boleto");

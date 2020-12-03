@@ -11,6 +11,14 @@ import java.nio.file.Path;
 import logic.*;
 import model.Boleto;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class MenuView extends JFrame implements WindowListener {
 
     public MenuView() {

@@ -3,6 +3,14 @@ package gui;
 import javax.swing.*;
 import java.awt.*;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class DocumentacionNacionalView extends JPanel {
     private JLabel curpLabel = new JLabel("Ingresa CURP: ");
     private JTextField curpField = new JTextField(20);

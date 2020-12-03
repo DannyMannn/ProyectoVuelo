@@ -5,6 +5,14 @@ import java.awt.*;
 
 import model.EnumClase;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class PasajeroView extends JPanel {
     private JLabel nombreLabel = new JLabel("Nombre: ");
     private JLabel edadLabel = new JLabel("Edad: ");

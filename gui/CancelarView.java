@@ -2,6 +2,12 @@ package gui;
 
 import javax.swing.*;
 import java.awt.*;
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
 
 public class CancelarView extends JFrame {
     JPanel contenedor;

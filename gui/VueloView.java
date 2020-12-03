@@ -5,6 +5,14 @@ import java.awt.*;
 
 import model.EnumVuelo;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class VueloView extends JPanel {
     private JLabel aerolineaLabel = new JLabel("Aerolinea: ");
     private JLabel destinoVueloLabel = new JLabel("Destino: ");

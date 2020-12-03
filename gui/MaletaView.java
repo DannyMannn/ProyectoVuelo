@@ -3,6 +3,14 @@ package gui;
 import javax.swing.*;
 import java.awt.*;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class MaletaView extends JPanel {
     private JLabel pesoMaletaLabel = new JLabel("Ingrese Peso");
     private JTextField pesoMaletaTextField = new JTextField(20);

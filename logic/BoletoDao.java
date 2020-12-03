@@ -5,6 +5,14 @@ import java.io.*;
 import model.Boleto;
 import model.EnumVuelo;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class BoletoDao {
     private ObjectOutputStream salida;
     private ObjectInputStream entrada;

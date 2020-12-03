@@ -3,6 +3,14 @@ package logic;
 import gui.MaletaView;
 import model.Maleta;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class MaletaController {
     private MaletaView vista;
 

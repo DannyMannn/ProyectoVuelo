@@ -5,6 +5,14 @@ import model.Pasajero;
 import model.EnumClase;
 import model.Documentacion;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class PasajeroController {
     private PasajeroView vista;
 

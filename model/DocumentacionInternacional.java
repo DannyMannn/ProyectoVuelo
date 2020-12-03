@@ -1,5 +1,13 @@
 package model;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class DocumentacionInternacional implements Documentacion {
     private int numPasaporte;
     private EnumVisa visa;

@@ -5,6 +5,14 @@ import java.awt.*;
 
 import model.EnumVisa;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class DocumentacionInternacionalView extends JPanel {
     private JLabel numPasaporteLabel = new JLabel("Número de Pasaporte: ");
     private JLabel tipoVisaLabel = new JLabel("Tipo de Visa: ");

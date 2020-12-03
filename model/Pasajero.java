@@ -2,6 +2,14 @@ package model;
 
 import java.io.Serializable;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class Pasajero implements Serializable {
     private EnumClase clase;
     private Documentacion documentacion;

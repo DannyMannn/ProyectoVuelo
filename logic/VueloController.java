@@ -4,6 +4,14 @@ import gui.VueloView;
 import model.Vuelo;
 import model.EnumVuelo;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class VueloController {
     private VueloView vista;
 

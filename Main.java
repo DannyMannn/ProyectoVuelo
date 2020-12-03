@@ -1,5 +1,13 @@
 import gui.MenuView;
 
+/*
+Ervey Guerrero Gómez
+David Hernández López
+Daniel Sánchez Vázquez
+Alejandro Tonatiuh García Espinoza
+*/
+
+
 public class Main {
 
     public static void main(String[] args) {
