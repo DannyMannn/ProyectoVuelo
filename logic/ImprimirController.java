@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 
 
 import gui.ImprimirView;
+import model.Boleto;
 import model.EnumVuelo;
 
 public class ImprimirController implements ActionListener {
@@ -28,10 +29,11 @@ public class ImprimirController implements ActionListener {
         Object evt = e.getSource();
         if (evt.equals(vista.getImprimirBoton())) {
             try {
-                boleto.eliminar(vista.getNombrePas().getText(), EnumVuelo.valueOf(vista.getTipoPasajeroComboBox().getSelectedItem().toString()));
-                JOptionPane.showMessageDialog((Component)null, ImprimirController.this.boleto.toString());
+                Boleto b1 = boleto.cargar(vista.getNombrePas().getText(), EnumVuelo.valueOf(vista.getTipoPasajeroComboBox().getSelectedItem().toString()));
+                JOptionPane.showMessageDialog((Component)null,b1.toString());
                 vista.dispose();
             } catch (Exception a) {
+                System.out.println(a);
                 JOptionPane.showMessageDialog(null, "Ha ocurrido un error!!!");
             }
         }

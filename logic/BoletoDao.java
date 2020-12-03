@@ -78,7 +78,7 @@ public class BoletoDao {
 	    }
     }
 
-    public void eliminar(String nombrePasajeroBoleto, EnumVuelo tipoVueloBoleto) throws Exception {
+    public Boleto eliminar(String nombrePasajeroBoleto, EnumVuelo tipoVueloBoleto) throws Exception {
         String tipoVueloBoletoAux = tipoVueloBoleto.toString ()
                 .toLowerCase ();
         nombrePasajeroBoleto = nombrePasajeroBoleto.replace (" ", "");
@@ -91,5 +91,6 @@ public class BoletoDao {
         } catch (Exception e) {
             throw new Exception ("¡Error! No se ha podido eliminar el archivo.");
         }
+        return null;
     }
 }

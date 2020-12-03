@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.nio.file.Path;
 
+import logic.ImprimirController;
 import logic.RegistroInternacionalController;
 import logic.RegistroNacionalController;
 import logic.CancelarController;
@@ -127,7 +128,8 @@ public class MenuView extends JFrame {
     }
 
     private void imprimirBoletoMenuItemActionPerformed(java.awt.event.ActionEvent evt) {
-        JOptionPane.showMessageDialog(null, "Not available yet.");
+        ImprimirView imprimirView = new ImprimirView();
+        ImprimirController controlador = new ImprimirController(imprimirView);
     }
 
     private void cancelarBoletoMenuItemActionPerformed(java.awt.event.ActionEvent evt) {
