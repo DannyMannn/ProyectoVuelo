@@ -3,13 +3,13 @@ package model;
 import java.io.Serializable;
 
 public class Boleto implements Serializable {
-    public static int uid = 0;
+    public static int uid;
     private int id;
     private Pasajero pasajero;
     private Vuelo vuelo;
 
     public Boleto (Pasajero pasajero, Vuelo vuelo) {
-	this.id = ++Boleto.uid;
+	this.id = Boleto.uid++;
         this.pasajero = pasajero;
         this.vuelo = vuelo;
     }

@@ -3,13 +3,17 @@ package gui;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowListener;
+import java.awt.event.WindowEvent;
 import java.nio.file.Path;
 
+import model.Boleto;
+import logic.BoletoDao;
 import logic.RegistroInternacionalController;
 import logic.RegistroNacionalController;
 import logic.CancelarController;
 
-public class MenuView extends JFrame {
+public class MenuView extends JFrame implements WindowListener {
 
     public MenuView() {
         initComponents();
@@ -107,11 +111,18 @@ public class MenuView extends JFrame {
                         .addComponent(fondoLabel, GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
         );
 
+	this.addWindowListener (this);
+
         pack();
     }// </editor-fold>
 
     private void salirMenuItemActionPerformed(ActionEvent evt) {
-        System.exit(0);
+	BoletoDao boletoDao = new BoletoDao ();
+	try {
+	    boletoDao.guardarBoletoUID ();
+	} catch (Exception e) {
+	}
+	System.exit(0);
     }
 
     private void boletoInternacionalMenuItemActionPerformed(ActionEvent evt) {
@@ -137,6 +148,45 @@ public class MenuView extends JFrame {
 
     private void registrarBoletoMenuActionPerformed(java.awt.event.ActionEvent evt) {
 
+    }
+
+    @Override
+    public void windowActivated(WindowEvent arg0) {
+    }
+
+    @Override
+    public void windowClosed(WindowEvent arg0) {
+    }
+
+    @Override
+    public void windowClosing(WindowEvent arg0) {
+	BoletoDao boletoDao = new BoletoDao ();
+	try {
+	    boletoDao.guardarBoletoUID ();
+	} catch (Exception e) {
+	}
+	this.dispose ();
+    }
+
+    @Override
+    public void windowDeactivated(WindowEvent arg0) {
+    }    
+
+    @Override
+    public void windowDeiconified(WindowEvent arg0) {
+    }
+
+    @Override
+    public void windowIconified(WindowEvent arg0) {
+    }
+
+    @Override
+    public void windowOpened(WindowEvent arg0) {
+	BoletoDao boletoDao = new BoletoDao ();
+	try {
+	    boletoDao.cargarBoletoUID ();
+	} catch (Exception e) {
+	}
     }
 
     // Variables declaration - do not modify
