@@ -36,7 +36,8 @@ public class BoletoDao {
 	     binStream = new DataOutputStream (
 		    new BufferedOutputStream (
 			    new FileOutputStream ("boleto_uid.bin")));
-	     binStream.write (Boleto.uid);
+	     binStream.writeInt (Boleto.uid);
+	     binStream.flush ();
 	     binStream.close ();
 	} catch (IOException e) {
 	    throw new Exception ("¡Error! No se ha podido guardar el archivo.");
