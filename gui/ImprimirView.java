@@ -1,3 +1,4 @@
+package gui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -39,5 +40,29 @@ public class ImprimirView extends JFrame{
         contrains.gridx = x;
         contrains.gridy = y;
         padre.add(hijo,contrains);
+    }
+
+    public JButton getImprimirBoton() {
+        return imprimirBoton;
+    }
+
+    public void setImprimirBoton(JButton imprimirBoton) {
+        this.imprimirBoton = imprimirBoton;
+    }
+
+    public JTextField getNombrePas() {
+        return nombrePas;
+    }
+
+    public void setNombrePas(JTextField nombrePas) {
+        this.nombrePas = nombrePas;
+    }
+
+    public JComboBox<String> getTipoPasajeroComboBox() {
+        return tipoPasajeroComboBox;
+    }
+
+    public void setTipoPasajeroComboBox(JComboBox<String> tipoPasajeroComboBox) {
+        this.tipoPasajeroComboBox = tipoPasajeroComboBox;
     }
 }
