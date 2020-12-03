@@ -3,6 +3,7 @@ package gui;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.net.URL;
 
 public class RegistroNacionalView {
     private JFrame mainFrame;
@@ -27,6 +28,10 @@ public class RegistroNacionalView {
     public RegistroNacionalView() {
         mainFrame = new JFrame();
         mainFrame.setLayout(new BorderLayout());
+        URL iconURL = getClass().getResource("resources/images/iconavion.png");
+        ImageIcon icon = new ImageIcon(iconURL);
+        mainFrame.setIconImage(icon.getImage());
+        mainFrame.setTitle("Registro de Boleto Nacional");
 
         //hacer panel en clase reutilizable?
         JPanel panelBoton = new JPanel(new GridBagLayout());

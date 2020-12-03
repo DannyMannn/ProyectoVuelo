@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowListener;
 import java.awt.event.WindowEvent;
+import java.net.URL;
 import java.nio.file.Path;
 
 import logic.*;
@@ -34,6 +35,9 @@ public class MenuView extends JFrame implements WindowListener {
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("Bienvenido Al Sistema");
+        URL iconURL = getClass().getResource("resources/images/iconavion.png");
+        ImageIcon icon = new ImageIcon(iconURL);
+        setIconImage(icon.getImage());
 
         fondoLabel.setIcon(new javax.swing.ImageIcon(this.getClass().getResource("resources/images/RegistrationN3.png")));
 

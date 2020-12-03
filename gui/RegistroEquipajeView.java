@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URL;
 
 public class RegistroEquipajeView {
     private JFrame mainFrame;
@@ -22,6 +23,11 @@ public class RegistroEquipajeView {
         maletaViews = new MaletaView[maletas];
         pesoMaleta = new double[maletas];
         mainFrame = new JFrame();
+
+        URL iconURL = getClass().getResource("resources/images/iconavion.png");
+        ImageIcon icon = new ImageIcon(iconURL);
+        mainFrame.setIconImage(icon.getImage());
+        mainFrame.setTitle("Registro de Equipaje");
 
         panelNorthEast = new JPanel(new GridLayout(3, 1));
         panelNorthEast.setBackground(Color.decode("#2299f0"));

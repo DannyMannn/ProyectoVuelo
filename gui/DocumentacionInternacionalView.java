@@ -61,6 +61,6 @@ public class DocumentacionInternacionalView extends JPanel {
         this.add(tipoVisaComboBox, constraints);
 
         this.setBorder(BorderFactory.createTitledBorder(
-                BorderFactory.createEtchedBorder(), "DocumentacionInternacionalView"));
+                BorderFactory.createEtchedBorder(), "Documentación Internacional"));
     }
 }

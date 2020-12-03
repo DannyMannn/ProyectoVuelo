@@ -28,7 +28,7 @@ public class DocumentacionNacionalView extends JPanel {
         this.add(curpField, constraints);
 
         this.setBorder(BorderFactory.createTitledBorder(
-                BorderFactory.createEtchedBorder(), "DocumentacionNacionalView"));
+                BorderFactory.createEtchedBorder(), "Documentación Nacional"));
     }
 }
 

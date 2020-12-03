@@ -75,6 +75,6 @@ public class PasajeroView extends JPanel {
         this.add(claseVueloComboBox, constraints);
 
         this.setBorder(BorderFactory.createTitledBorder(
-                BorderFactory.createEtchedBorder(), "PasajeroView"));
+                BorderFactory.createEtchedBorder(), "Datos del Pasajero"));
     }
 }

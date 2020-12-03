@@ -84,6 +84,6 @@ public class VueloView extends JPanel {
         constraints.gridx = 1;
 
         this.setBorder(BorderFactory.createTitledBorder(
-                BorderFactory.createEtchedBorder(), "VueloView"));
+                BorderFactory.createEtchedBorder(), "Datos del Vuelo"));
     }
 }

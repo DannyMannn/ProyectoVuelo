@@ -2,6 +2,7 @@ package gui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.net.URL;
 
 public class ImprimirView extends JFrame{
     JPanel contenedor;
